@@ -18,3 +18,5 @@ rsync -av vendor/sandrakh/weather-module/test ./
 rsync -av vendor/sandrakh/weather-module/config ./
 rsync -av vendor/sandrakh/weather-module/view ./
 `
+
+### Make sure to change the api-key from "YOUR_KEY" to your own api-key
