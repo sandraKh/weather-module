@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/sandraKh/weather-module.svg?branch=main)](https://travis-ci.com/sandraKh/weather-module)
+
+
 # weather-module
 
 Install with composer `composer require sandrakh/weather-module`
@@ -19,4 +22,4 @@ rsync -av vendor/sandrakh/weather-module/config ./
 rsync -av vendor/sandrakh/weather-module/view ./
 `
 
-### Make sure to change the api-key from "YOUR_KEY" to your own api-key
+#### Make sure to change the api-key from "YOUR_KEY" to your own api-key
