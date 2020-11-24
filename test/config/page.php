@@ -9,88 +9,33 @@ return [
     // This layout view is the base for rendering the page, it decides on where
     // all the other views are rendered.
     "layout" => [
+        "template" => "anax/v2/layout/default",
         "region" => "layout",
-        "template" => "anax/v2/layout/dbwebb_se",
+        "sort" => null,
         "data" => [
-            "baseTitle" => " | ramverk1",
-            "bodyClass" => null,
+            "baseTitle" => " | Anax",
             "favicon" => "favicon.ico",
-            "htmlClass" => null,
-            "lang" => "sv",
             "stylesheets" => [
-                "css/dbwebb-se.min.css",
+                "css/style.css",
             ],
             "javascripts" => [
-                "js/responsive-menu.js",
+                "js/main.js",
             ],
         ],
     ],
-
     // These views are always loaded into the collection of views.
     "views" => [
-        // [
-        //     "region" => "header-col-1",
-        //     "template" => "anax/v2/header/site_logo",
-        //     "data" => [
-        //         "class" => "large",
-        //         "siteLogo"      => "image/theme/leaf_256x256.png",
-        //         "siteLogoAlt"   => "Löv",
-        //     ],
-        // ],
         [
-            "region" => "header-col-1",
-            "template" => "anax/v2/header/site_logo_text",
-            "data" => [
-                "homeLink"      => "",
-                "siteLogoText"  => "ramverk1",
-                "siteLogoTextIcon" => "image/theme/leaf_40x40.png",
-                "siteLogoTextIconAlt" => "Löv-bild",
-            ],
+            "template" => "anax/v2/header/default",
+            "region" => "header",
+            "sort" => -1,
+            "data" => null,
         ],
         [
-            "region" => "header-col-2",
-            "template" => "anax/v2/navbar/navbar_submenus",
-            "data" => [
-                "navbarConfig" => require __DIR__ . "/navbar/header.php",
-            ],
-        ],
-        [
-            "region" => "header-col-3",
-            "template" => "anax/v2/navbar/responsive_submenus",
-            "data" => [
-                "navbarConfig" => require __DIR__ . "/navbar/responsive.php",
-            ],
-        ],
-        [
+            "template" => "anax/v2/footer/default",
             "region" => "footer",
-            "template" => "anax/v2/columns/multiple_columns",
-            "data" => [
-                "class"  => "footer-column",
-                "columns" => [
-                    [
-                        "template" => "anax/v2/block/default",
-                        "contentRoute" => "block/footer-col-1",
-                    ],
-                    [
-                        "template" => "anax/v2/block/default",
-                        "contentRoute" => "block/footer-col-2",
-                    ],
-                    [
-                        "template" => "anax/v2/block/default",
-                        "contentRoute" => "block/footer-col-3",
-                    ]
-                ]
-            ],
-            "sort" => 1
-        ],
-        [
-            "region" => "footer",
-            "template" => "anax/v2/block/default",
-            "data" => [
-                "class"  => "site-footer",
-                "contentRoute" => "block/footer",
-            ],
-            "sort" => 2
+            "sort" => -1,
+            "data" => null,
         ],
     ],
 ];
