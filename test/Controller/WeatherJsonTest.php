@@ -18,15 +18,13 @@ class JsonApiControllerWeather2Test extends TestCase
     {
         global $di;
 
-        $di = new DIFactoryConfig();
+        $this->di = new DIFactoryConfig();
+        $di = $this->di;
         $di->loadServices(ANAX_INSTALL_PATH . "/config/di");
         $di->loadServices(ANAX_INSTALL_PATH . "/test/config/di");
 
-        $this->di = $di;
-
         $this->controller = new JsonApiController();
-        $this->controller->setDI($this->di);
-        $this->controller->initialize();
+        $this->controller->setDI($di);
     }
 
     public function testIndexAction()
@@ -35,4 +33,6 @@ class JsonApiControllerWeather2Test extends TestCase
         $res = $this->controller->indexAction();
         $this->assertNotNull($res);
     }
+
+
 }
