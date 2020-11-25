@@ -14,7 +14,7 @@ Install with composer `composer require sandrakh/weather-module`
 Add require to you compose.json-file like this:
 
 `    "require": {
-        "sandrakh/weather-module": "^1.1"
+        "sandrakh/weather-module": "^2.1"
     }`
     
 # Add files from module to right folders 
