@@ -1,5 +1,9 @@
 [![Build Status](https://travis-ci.com/sandraKh/weather-module.svg?branch=main)](https://travis-ci.com/sandraKh/weather-module)
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/sandraKh/weather-module/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/sandraKh/weather-module/?branch=main)
+[![Code Coverage](https://scrutinizer-ci.com/g/sandraKh/weather-module/badges/coverage.png?b=main)](https://scrutinizer-ci.com/g/sandraKh/weather-module/?branch=main)
+[![Build Status](https://scrutinizer-ci.com/g/sandraKh/weather-module/badges/build.png?b=main)](https://scrutinizer-ci.com/g/sandraKh/weather-module/build-status/main)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/sandraKh/weather-module/badges/code-intelligence.svg?b=main)](https://scrutinizer-ci.com/code-intelligence)
 
 # weather-module
 
